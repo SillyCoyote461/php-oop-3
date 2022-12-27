@@ -1,8 +1,9 @@
 <?php
 include_once __DIR__.'/product.php';
 
-class dvd extends product{
-    public $time;
+class book extends product{
+    public $cover;
+    public $pages;
     public function __construct(
         String $title,
         String $author,
@@ -10,9 +11,11 @@ class dvd extends product{
         String $description,
         String $edition,
         Float $vote,
-        String $time
+        String $cover,
+        Int $pages
     ){
-        $this->time = $time;
+        $this->cover = $cover;
+        $this->pages = $pages;
     }
 }
 ?>

@@ -5,12 +5,8 @@ trait Date{
     public $month;
     public $year;
 
-    public function GetDate(
-        Int $day,
-        Int $month,
-        Int $year
-    ){
-        return $date=[$day, $month, $year];
+    public function getDate(){
+        echo "$this->day/$this->month/$this->year";
     }
 }
 

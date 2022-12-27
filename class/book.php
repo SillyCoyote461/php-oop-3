@@ -7,7 +7,8 @@ class book extends product{
     public function __construct(
         String $title,
         String $author,
-        String $genre,
+        Float $price,
+        Genre $genre,
         String $description,
         String $edition,
         Float $vote,
@@ -16,6 +17,7 @@ class book extends product{
     ){
         $this->cover = $cover;
         $this->pages = $pages;
+        parent::__construct($title, $author, $price, $genre, $description, $edition, $vote);
     }
 }
 ?>

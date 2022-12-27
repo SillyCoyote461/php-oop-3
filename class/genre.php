@@ -1,6 +1,6 @@
 <?php
 
-class genre{
+class Genre{
     public $name;
     public $icon;
 

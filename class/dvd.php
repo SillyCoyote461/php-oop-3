@@ -6,6 +6,7 @@ class dvd extends product{
     public function __construct(
         String $title,
         String $author,
+        Float $price,
         String $genre,
         String $description,
         String $edition,
